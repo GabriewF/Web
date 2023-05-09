@@ -1,7 +1,6 @@
 import { Metadata } from "next/types";
 import Links from "../components/links";
 
-// Modern Normalize
 import "modern-normalize/modern-normalize.css";
 
 export const metadata: Metadata = {
