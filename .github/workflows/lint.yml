@@ -1,0 +1,33 @@
+name: 'Lint'
+
+on:
+  push:
+    branches: ['dev']
+  pull_request:
+    branches: ['dev']
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Initialize PNPM
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'pnpm'
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Perform Lint
+        run: pnpm run lint

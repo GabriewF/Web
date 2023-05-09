@@ -1,0 +1,29 @@
+.content {
+  position: relative;
+  text-align: center;
+
+  transition-duration: 150ms;
+  transition-property: all;
+
+  display: grid;
+  height: calc(100vh - 3rem);
+  place-items: center;
+}
+
+.image {
+  opacity: 20%;
+  width: 18.75rem;
+  height: 18.75rem;
+
+  transition-duration: 300ms;
+  transition-property: opacity;
+
+  &:hover {
+    opacity: 50%;
+  }
+
+  @media (min-width: 768px) {
+    width: 30rem;
+    height: 30rem;
+  }
+}
