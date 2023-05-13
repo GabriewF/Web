@@ -15,8 +15,7 @@ export default function Home() {
         height="480"
         className={styles.image}
         alt="MacOS Mouse"
-        placeholder="blur"
-        priority
+        priority={true}
       />
     </section>
   );
