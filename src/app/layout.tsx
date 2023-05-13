@@ -15,14 +15,6 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "GabriewF",
     determiner: "auto",
-
-    images: {
-      url: "/images/meta/banner.webp",
-      type: "image/webp",
-      alt: "A white banner with 'Personal Website' written on it and a computer mouse in the background.",
-      width: 2560,
-      height: 1440,
-    },
   },
 
   twitter: {
@@ -35,14 +27,6 @@ export const metadata: Metadata = {
 
     site: "@GabriewF_",
     siteId: "1433193130606698502",
-
-    images: {
-      url: "/images/meta/banner.webp",
-      type: "image/webp",
-      alt: "A white banner with 'Personal Website' written on it and a computer mouse in the background.",
-      width: 2560,
-      height: 1440,
-    },
   },
 
   creator: "GabriewF",
